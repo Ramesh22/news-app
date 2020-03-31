@@ -1,0 +1,87 @@
+<h2>Top Stories</h2>
+
+<!--<mat-grid-list cols="4" rowHeight="2:1">
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile colspan="2" rowspan="2"><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+</mat-grid-list>-->
+
+<!--<a [href]="headOneArticle.url">
+  <mat-grid-list cols="2" rowHeight="2:2">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-title>{{headOneArticle.title}}</mat-card-title>
+        <img [src]="headOneArticle.urlToImage">
+        <mat-card-subtitle>{{headOneArticle.description}}</mat-card-subtitle>
+        <mat-card-content>{{headOneArticle.content}}</mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-title>{{headTwoArticle.title}}</mat-card-title>
+        <img [src]="headTwoArticle.urlToImage">
+        <mat-card-subtitle>{{headTwoArticle.description}}</mat-card-subtitle>
+        <mat-card-content>{{headTwoArticle.content}}</mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</a>-->
+
+<!--<a href="">
+  <mat-card *ngFor="let oneArticle of article" (click)="getArticle(oneArticle)">
+    <mat-card-title>{{oneArticle.title}} </mat-card-title>
+    <img [src]="oneArticle.urlToImage"/>
+    <mat-card-subtitle>{{oneArticle.description}}</mat-card-subtitle>
+    <mat-card-content>{{oneArticle.content}} </mat-card-content>
+  </mat-card>
+</a>-->
+
+<div>
+  <mat-grid-list cols="2" rowHeight="2:2">
+    <mat-grid-tile>
+      <mat-card (click)="getOneArticle(headOneArticle)">
+        <mat-card-title>{{headOneArticle.title}}</mat-card-title>
+        <img class="articileImage" [src]="headOneArticle.urlToImage">
+        <mat-card-subtitle>{{headOneArticle.description}}</mat-card-subtitle>
+        <!--<mat-card-content>{{headOneArticle.content}}</mat-card-content>-->
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-title>{{headTwoArticle.title}}</mat-card-title>
+        <img [src]="headTwoArticle.urlToImage">
+        <mat-card-subtitle>{{headTwoArticle.description}}</mat-card-subtitle>
+        <!--<mat-card-content>{{headTwoArticle.content}}</mat-card-content>-->
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+<nav>
+  <div style="display: grid">
+    <mat-card *ngFor="let oneArticle of article" (click)="getArticle(oneArticle)">
+      <mat-card-title>{{oneArticle.title}} </mat-card-title>
+      <img class="articileImage" [src]="oneArticle.urlToImage"/>
+      <mat-card-subtitle>{{oneArticle.description}}</mat-card-subtitle>
+      <!--<mat-card-content>{{oneArticle.content}} </mat-card-content>-->
+    </mat-card>
+  </div>
+</nav>
+
+

@@ -1,0 +1,57 @@
+.articileImage {
+  object-fit: cover; /*this makes the image in src fit to the size specified below*/
+  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 80%;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.example-card {
+  margin-top: 4px;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.img-article {
+  height: 350px;
+}
+
+.action-buttons {
+  text-align: center;
+}
+
+.example-container {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(111, 111, 111, 0.50);
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 75%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+.source-name {
+  margin-left: 5px;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  background-color: #3f51b5;
+  color: white;
+}
+

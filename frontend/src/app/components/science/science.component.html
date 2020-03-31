@@ -1,0 +1,10 @@
+<nav>
+  <div>
+    <mat-card *ngFor="let oneArticle of article" (click)="getArticle(oneArticle)">
+      <mat-card-title>{{oneArticle.title}} </mat-card-title>
+      <img class="articileImage" [src]="oneArticle.urlToImage"/>
+      <mat-card-subtitle>{{oneArticle.description}}</mat-card-subtitle>
+      <mat-card-content>{{oneArticle.content}} </mat-card-content>
+    </mat-card>
+  </div>
+</nav>
